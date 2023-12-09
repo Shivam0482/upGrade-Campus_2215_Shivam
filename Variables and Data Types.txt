@@ -1,0 +1,96 @@
+Question.1 :- Code for addition of 3 numbers?
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        int num1=75;
+        int num2=65;
+        int num3=55;
+        int sum= num1 + num2 + num3 ;
+
+        System.out.println("The Sum of these three numbers :" + sum);
+    }
+}
+
+
+
+Questions.2 :- Code for greeting meassage with name of person?
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+       System.out.println("What is your name");
+        Scanner sc = new Scanner(System.in);
+        String name= sc.next();
+        System.out.println("Hello " + name + ", have a great day!");
+    }
+}
+
+
+Questions.3 :- Write code to see if number enterd by user is integer or not ?
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+       System.out.println("Enter your number");
+        Scanner sc = new Scanner(System.in);
+        System.out.println(sc.hasNext());
+
+    }
+}
+
+
+Question.4 :- Write code to calculate percentage of the given marks ?
+
+
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        float subject1 = 74;
+        float subject2 = 81;
+        float subject3 = 78;
+        float subject4 = 67;
+        float subject5 = 92;
+
+        float percentage = (subject1+subject2+subject3+subject4+subject5)/5;
+
+        System.out.println(percentage);
+        
+    }
+}
+
+
+
+
+
+Question.5 :- Write code to convert kilometers to miles
+
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+      double kilometers;
+
+        System.out.print("Please enter Kilometers: ");
+
+        Scanner in = new Scanner(System.in);
+        kilometers=in.nextDouble();
+
+        double miles = kilometers/1.6;
+
+        System.out.println(miles + " Miles");
+
+    }
+}
