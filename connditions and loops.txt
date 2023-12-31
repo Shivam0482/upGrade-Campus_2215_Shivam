@@ -1,0 +1,143 @@
+Q-1 Write program to find a students is pass or fail in given 3 subject of maths, science and english, in totle you need average of 40% and to pass in each subject you need 33 marks ?
+
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        byte m1, m2, m3;
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter your marks of Maths");
+        m1 =sc.nextByte();
+
+        System.out.println("Enter your marks of Science");
+        m2 = sc.nextByte();
+
+        System.out.println("Enter your marks of English");
+        m3 = sc.nextByte();
+
+        float avg =(m1+m2+m3)/3.0f;
+        System.out.println("Your percentage is "+avg);
+
+        if(avg>=40 && m1>=33 && m2>=33 && m3>-33){
+            System.out.println("You have passed the Exam.");
+        }
+
+        else {
+            System.out.println("You have failed the Exam.");
+        }
+
+    }
+}
+
+
+
+
+Q-2 Write a program to print following pattern
+
+    * * * *
+    * * *
+    * *
+    *
+
+
+public class Main {
+    public static void main(String[] args) {
+
+        int n=4;
+        for (int i=n; i>0; i--){
+            for(int j=0; j<i; j++){
+                System.out.print("*");
+            }
+            System.out.print("\n");
+        }
+
+    }
+}
+
+
+
+Q-3 Write a program to sum frist n even numbers.
+
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc= new Scanner(System.in);
+
+        int sum = 0;
+
+        int n = sc.nextInt();
+
+        for (int i = 0; i < n; i++) {
+
+            sum = sum + (2*i);
+        }
+
+        System.out.print("Sum of even number is: ");
+
+        System.out.println(sum);
+    }
+}
+
+
+
+
+Q-4 Write a program to print multiplication table of given number n.
+
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc= new Scanner(System.in);
+
+        System.out.println("Enter number for table ");
+
+        int n = sc.nextInt();
+
+        for (int i=1; i<=10; i++){
+
+            System.out.printf("%d X %d =%d\n", n, i, n*i);
+        }
+    }
+}
+
+
+
+
+Q-5 Write a program for find factorial of given n number.
+
+
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc= new Scanner(System.in);
+
+        System.out.println("Enter number :");
+
+        int n = sc.nextInt();
+
+        long factorial = 1;
+
+        for(int i = 1; i <= n; ++i)
+        {
+            factorial *= i;
+        }
+
+        System.out.printf("Factorial of %d = %d", n, factorial);
+    }
+}
+
